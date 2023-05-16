@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.employeeapi.Utilities.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="com.employeeapi.testCases.Post_Employee_Record">
+        <methods>
+          <include name="createEmployee"/>
+          <include name="checkResposeBody"/>
+          <include name="checkStatusCode"/>
+          <include name="tearDown"/>
+          <include name="checkstatusLine"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.Post_Employee_Record -->
+      <class name="com.employeeapi.testCases.Put_Employee_Record">
+        <methods>
+          <include name="tearDown"/>
+          <include name="updateEmployee"/>
+          <include name="checkStatusCode"/>
+          <include name="setup"/>
+          <include name="checkstatusLine"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.Put_Employee_Record -->
+      <class name="com.employeeapi.testCases.Get_Single_Employee_Record">
+        <methods>
+          <include name="tearDown"/>
+          <include name="getEmployeeData"/>
+          <include name="checkResposeBody"/>
+          <include name="checkstatusLine"/>
+          <include name="setup"/>
+          <include name="checkStatusCode"/>
+        </methods>
+      </class> <!-- com.employeeapi.testCases.Get_Single_Employee_Record -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
